@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .figure-30 {
+      @apply w-full p-10 bg-neutral-50
+    }
+    .figure-100 {
+        @apply w-full col-span-3 bg-neutral-50
+    }
+  }

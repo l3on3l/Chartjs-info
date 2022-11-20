@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid19 App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1
+      class="text-center py-8 text-4xl font-boldtext-6xl leading-normal text-red-800"
+    >
+      Chart js - COVID19 API
+    </h1>
+    <p class="text-center">
+      Estadisticas de los primeros 7 dias de Abril del 2020.
+    </p>
+    <p class="text-center">EEUU, Espanha, Brasil, Alemania, Mexico</p>
+    <div class="container mx-auto grid grid-cols-3 mt-8">
+      <figure class="figure-100">
+        <p>Casos Confirmados</p>
+        <canvas id="line" width="100%" height="30%"></canvas>
+      </figure>
+    </div>
+
+    <div class="grid grid-cols-3 gap-2 my-12">
+      <figure class="figure-30">
+        <p>Casos Confirmados</p>
+        <canvas id="radar" width="100%"></canvas>
+      </figure>
+      <figure class="figure-30">
+        <p>Recuperados</p>
+        <canvas id="pie" width="100%"></canvas>
+      </figure>
+      <figure class="figure-30">
+        <p>Fallecimientos</p>
+        <canvas id="doughnut" width="100%"></canvas>
+      </figure>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
